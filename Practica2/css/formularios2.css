@@ -1,0 +1,149 @@
+*{box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #C2D4FA;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+    color: #111111;
+}
+
+header h1 {
+    color:  #E01707;
+    margin: 0;
+}
+
+
+main{
+    height: 66.66%;
+    display: flex;
+    flex-direction: row;
+}
+main #cuadro{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 30px;
+    height: 66.66%;
+}
+form #imag{
+    width: 40%;
+}
+form #formulario{
+    width: 100%;
+}
+#menu{
+    color: #FDB704;
+    background-color: #E01707;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 2px #E01707 solid;
+}
+#menu nav ol {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+#menu nav ol li{
+    padding-bottom: 60%;
+    padding-top: 60%;
+}
+#menu nav ol li a{
+    color: #FDB704;
+    text-decoration: none;
+}
+#menu nav ol li a:hover{
+    background-color: #F26A21;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+}
+form{
+    background-color: #F8BDBD;
+}
+form div {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+input[type="text"],input[type="number"], form div select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #111111;
+    border-radius: 5px;
+}
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    display: inline;
+    font-weight: normal;
+    margin-right: 15px;
+}
+
+p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+button[type="button"] {
+    width: 80%;
+    padding: 12px;
+    background-color: #E01707;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="button"]:hover {
+    background-color: #F26A21;
+}
+#cuadro header{
+    background-color: #EA6880;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding-left: 40%;
+    padding-right: 40%;
+    padding-bottom: 50px;
+    padding-top: 60px;
+    height: 100%;
+}
+footer{
+    color: white;
+    background-color: #F26A21;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px;
+    
+}
+footer #nombre{
+    padding: 20px;
+    padding-left: 1000px;
+}
+footer #grupo{
+    padding: 20px;
+    float: left;
+}
+

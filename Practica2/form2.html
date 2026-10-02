@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Fernando Gonzalez">
+    <meta keywords="html, etiquetas, arquitectura">
+    <title>Formulario 1</title>
+    <link rel="stylesheet" href="css/formulario.css">
+</head>
+
+<body>
+
+    <main>
+        <aside id="menu">
+            <h1>Menu</h1>
+                    <nav>
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="form1.html">Disco</a></li>
+                        <li><a href="form2.html">Cantante</a></li>
+                        <li><a href="form3.html">Cancion</a></li>
+                        <li><a href="form4.html">Playlist</a></li>
+                    </ol>
+                    </nav>
+        </aside>
+        <section id="cuadro">
+            <form>
+            <section id="formulario">
+                <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+            </div>
+
+            <div>
+                <label for="edad">Edad:</label>
+                <input type="number" id="apellido" name="edad">
+            </div>
+
+            <div>
+                <label for="genero">Genero:</label>
+                <input type="radio" id="correo" name="genero" value="M"/>Masculino
+                <input type="radio" id="correo" name="genero" value="F"/>Femenino
+            </div>
+<div>
+    <label for="artistas"> Trayectoria:</label>
+     <select id="artista" aria-placeholder="Seleccionar ciudad" name="artistas">
+                                    <option value="1">10-15 años</option>
+                                    <option value="2">5-9 años</option>
+                                    <option value="3">1-4 años</option>
+                                </select>
+</div>
+            </section>
+            <section id="imag">
+                <div>
+                <input type="file" id="img" name="imagen">
+            </div>
+            </section>
+            
+            
+        </form>
+            <header>
+                <div>
+                <button type="button" onclick="mostrarDatos2();">Enviar</button>
+            </div>
+        <h1>Cantante</h1>
+    </header>
+        </section>
+        
+    </main>
+    
+    <footer>
+        <section id="grupo"><p>Grupo LDSM401</p></section>
+        <section id="nombre"><p>Fernando Gonzalez</p></section>
+    </footer>
+    <script src="js/js.js"></script>
+</body>
+</html>
