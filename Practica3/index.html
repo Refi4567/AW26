@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Currículum</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="bg-black pt-5">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#inicio"><img src="img/Refi.jpg" alt="Avatar Logo" style="width:40px;" class="rounded-pill"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="inicio" class="bg-success py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-4">
+                        <h1>Hola, soy Fernando González</h1>
+                        <h4>Estudiante de Desarrollo de Software</h4>
+                        <p>Bienvenido a mi currículum. Aquí puedes conocer mis habilidades, estudios y proyectos.</p>
+                        <a href="#sobre-mi" class="btn btn-primary">Conoce más sobre mí</a>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="carrusel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/ds1.jpg" class="d-block w-100 img-fluid" alt="Computadora en un escritorio">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/ds2.jpg" class="d-block w-100 img-fluid" alt="Laptop">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/ds3.jpg" class="d-block w-100 img-fluid" alt="Tecnología">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="bg-dark text-light py-5">
+            <div class="container ">
+                <h2 class="mb-3">Sobre mí</h2>
+                <p>Soy estudiante de desarrollo de software. Tengo una gran capacidad de aprender cosas a un nivel aceptable en un corto periodo de tiempo, soy eficiente en cualquier
+                    trabajo que se me solicite y puedo realizar tareas pesadas con buena organizacion en tiempo y en forma.</p>
+                <h4>Formación académica</h4>
+                <p>Universidad Tecnológica de León - Licenciatura en ingeniería en Desarrollo de Software.</p>
+            </div>
+        </section>
+
+        <section id="habilidades" class="bg-success py-5">
+            <div class="container">
+                <h2 class="mb-4">Mis habilidades</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Habilidades de programacion</h4>
+                        <ul>
+                            <li>HTML y CSS</li>
+                            <li>Kotlin</li>
+                            <li>Java y C</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Habilidades personales</h4>
+                        <ul>
+                            <li>Trabajo en equipo</li>
+                            <li>Responsabilidad</li>
+                            <li>Creatividad</li>
+                            <li>Aprendizaje continuo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="bg-dark text-light py-5">
+            <div class="container">
+                <h2 class="mb-4">Mis proyectos</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="card bg-success h-100">
+                            <img src="img/Proyecto1.png" class="card-img-top img-fluid" alt="Computadora">
+                            <div class="card-body">
+                                <h5 class="card-title">Página web</h5>
+                                <p class="card-text">Practica numero 1.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card bg-success h-100">
+                            <img src="img/Proyecto3.png" class="card-img-top img-fluid" alt="Libros">
+                            <div class="card-body">
+                                <h5 class="card-title">ERS</h5>
+                                <p class="card-text">Documento de desarrollo de aplicacion web.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card bg-success h-100">
+                            <img src="img/Proyecto2.jpeg" class="card-img-top img-fluid" alt="Equipo de cómputo">
+                            <div class="card-body">
+                                <h5 class="card-title">Proyecto en Java</h5>
+                                <p class="card-text">Un programa con un lista doblemente enlazada.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="bg-success py-5">
+            <div class="container text-center">
+                <h2>Contacto</h2>
+                <p>¿Quieres saber cómo contactarme?</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalContacto">
+                    Ver contacto
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal fade" id="modalContacto" tabindex="-1" aria-labelledby="tituloModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tituloModal">Información de contacto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Nombre:</strong> Fernando González</p>
+                    <p><strong>Correo:</strong> fernando142704@gmail.com</p>
+                    <p><strong>Ciudad:</strong> León, Guanajuato</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">Fernando González - Mi Currículum</p>
+    </footer>
+
+</body>
+</html>
