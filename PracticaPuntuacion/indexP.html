@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Arreglos con JS</title>
+</head>
+<body>
+    <header class="container-fluid p-5 bg-primary text-white text-center">
+        <h1>Ejercicio 1, 3, 4, 5</h1> 
+    </header>
+    <section class="container mt-5">
+        <div class="row">
+          <article class="col-sm-4 auto-mx">
+            <h3>Ejercicio 1</h3>
+            <button class="btn btn-warning" onclick="muertes()">Capturar muertes</button>
+            <article id="imprimir"></article>
+            <article><p id="stats"></p></article>
+          </article>
+          <article class="col-sm-4">
+            <h3>Ejercicio 3</h3>
+            <button class="btn btn-warning" onclick="letra()">Generar</button>
+            <article id="imprimir3" style="display: flex; flex-direction: column;"></article>
+            </article>
+          </article>
+<article class="col-sm-4">
+    <h3>Ejercicio 4</h3>
+        <div class="container">
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Puesto</th>
+                            <th>Newby</th>
+                            <th>Jr</th>
+                            <th>Sr</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Diseñador</th>
+                            <td>$120</td>
+                            <td>$180</td>
+                            <td>$280</td>
+                        </tr>
+                        <tr>
+                            <th>Programador</th>
+                            <td>$120</td>
+                            <td>$280</td>
+                            <td>$340</td>
+                        </tr>
+                        <tr>
+                            <th>Líder</th>
+                            <td>$240</td>
+                            <td>$520</td>
+                            <td>$890</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    
+        <div class="container bg-light">
+            <form>
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Puesto</label>
+                    <select class="form-select" id="puesto" onchange="calcular()">
+                        <option value="0">Diseñador</option>
+                        <option value="1">Programador</option>
+                        <option value="2">Líder</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Nivel</label>
+                    <select class="form-select" id="nivel" onchange="calcular()">
+                        <option value="0">Newby</option>
+                        <option value="1">Jr</option>
+                        <option value="2">Sr</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Horas trabajadas</label>
+                    <input type="number" class="form-control" id="horas" min="0" oninput="calcular()">
+                </div>
+
+                <div class="mb-2">
+                    <label class="form-label fw-bold">Total a pagar</label>
+                    <input type="text" class="form-control" id="total" readonly>
+                </div>
+            </form>
+        </div>
+</article>
+
+<article class="col-sm-4 container-fluid">
+    <h3>Ejercicio 5</h3>
+
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped text-center">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Día</th>
+                        <th>Hora</th>
+                        <th>Evento</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                
+<tbody>
+    <tr>
+        <th>Lunes</th>
+        <td id="hora0"></td>
+        <td id="evento0"></td>
+        <td id="descripcion0"></td>
+    </tr>
+    <tr>
+        <th>Martes</th>
+        <td id="hora1"></td>
+        <td id="evento1"></td>
+        <td id="descripcion1"></td>
+    </tr>
+    <tr>
+        <th>Miércoles</th>
+        <td id="hora2"></td>
+        <td id="evento2"></td>
+        <td id="descripcion2"></td>
+    </tr>
+    <tr>
+        <th>Jueves</th>
+        <td id="hora3"></td>
+        <td id="evento3"></td>
+        <td id="descripcion3"></td>
+    </tr>
+    <tr>
+        <th>Viernes</th>
+        <td id="hora4"></td>
+        <td id="evento4"></td>
+        <td id="descripcion4"></td>
+    </tr>
+    <tr>
+        <th>Sábado</th>
+        <td id="hora5"></td>
+        <td id="evento5"></td>
+        <td id="descripcion5"></td>
+    </tr>
+    <tr>
+        <th>Domingo</th>
+        <td id="hora6"></td>
+        <td id="evento6"></td>
+        <td id="descripcion6"></td>
+    </tr>
+</tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="container bg-light mt-4">
+        <form>
+            <div class="mb-3">
+                <label class="form-label fw-bold">Día</label>
+                <select class="form-select" id="dia">
+                    <option value="0">Lunes</option>
+                    <option value="1">Martes</option>
+                    <option value="2">Miércoles</option>
+                    <option value="3">Jueves</option>
+                    <option value="4">Viernes</option>
+                    <option value="5">Sábado</option>
+                    <option value="6">Domingo</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Hora</label>
+                <input type="time" class="form-control" id="hora">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Evento</label>
+                <input type="text" class="form-control" id="evento">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Descripción</label>
+                <textarea class="form-control" id="descripcion" rows="3"></textarea>
+            </div>
+
+            <button type="button" class="btn btn-primary w-100" onclick="guardarAgenda()">Guardar</button>
+        </form>
+    </div>
+</article>
+
+    </section>
+    
+    <script src="js.js"></script>
+</body>
+</html>
